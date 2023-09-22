@@ -7,6 +7,9 @@
 </head>
 <body>
     Hello World
-    <script>console.log("data: ", fetch("https://graph.instagram.com/me/media?fields=id,media_type,media_url,username,timestamp&access_token=IGQWRPNENwUDYtVjNiTTA2Y1FzZAUZAaeWZARSU15OERIWndtRHkteHZAyS3RoZA1lyVEJ2SnYzZA0VmZATMzU0I2VlNQaU14eWVkaUlyekVqSmJXOFJxVkhYb19iQ3NlckUxZA0ZAZANGRmUlBIYkVFaUdSVXgtdURIMDA2dkRvVWlSOWRmajBkZAwZDZD"))</script>
+    <script>
+        const data = fetch("https://graph.instagram.com/me/media?fields=id,media_type,media_url,username,timestamp&access_token=IGQWRPNENwUDYtVjNiTTA2Y1FzZAUZAaeWZARSU15OERIWndtRHkteHZAyS3RoZA1lyVEJ2SnYzZA0VmZATMzU0I2VlNQaU14eWVkaUlyekVqSmJXOFJxVkhYb19iQ3NlckUxZA0ZAZANGRmUlBIYkVFaUdSVXgtdURIMDA2dkRvVWlSOWRmajBkZAwZDZD");
+        console.log("data: ", data.then(function(response){return response}) )
+    </script>
 </body>
 </html>
